@@ -5,7 +5,13 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-#menu{
+#menu, footer{
     background: rgb(86, 87, 87);
 }
 
+iframe{
+    width: 100;
+}
+img{
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -16,16 +16,17 @@
     <script src="../JS/all.min.js"></script>
     <script src="../jquery-3.6.0.js" ></script>
     <script src="../JS/action.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-sm navbar-light " id="menu">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class=" navbar-nav d-flex justify-content-around align-items-center container-sm ">
-                <a class="navbar-brand fs-3 text-light" style="margin-left:-10px;" href="../index.htm"><i class="fa-solid fa-r text-info"></i>amadan <i class="fa-solid fa-c text-info"></i>hampi<i class="fa-solid fa-futbol text-info"></i>n</a>
+                <a id="toggler" class="navbar-brand fs-3 text-light" style="margin-left:-10px;" href="../index.htm"><i class="fa-solid fa-r text-info"></i>amadan <i class="fa-solid fa-c text-info"></i>hampi<i class="fa-solid fa-futbol text-info"></i>n</a>
                 <a class="nav-item nav-link active fs-5 text-light " href="../index.htm" style="text-decoration:none;">Home</a>
                 <a class="nav-item nav-link fs-5 text-light" href="contact.htm" style="text-decoration: none ;">About</a>
                 <a class="nav-item nav-link fs-5 text-light" href="#" style="text-decoration: underline  rgb(108, 160, 209);">Contact</a>
@@ -34,30 +35,40 @@
         </div>
       </nav>
 
-      <div class="d-flex justify-content-center align-items-center row">
-          <form class="col container-xxl w-75" style="border-radius:10px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-              <h3 class="text-info " style="text-decoration: underline teal; margin-left: 80px;">Contact Us By Email</h3>
-            <div class="">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Gmail...">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <div class="container-fluid mt-5 row g-2">
+          <form class=" mb-3 col-sm-2">
+                  <h3 class="text-info text-decoration-underline ms-5">Send Message To us!</h3>
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" placeholder="Write your message here!" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div><br>
+                <div class="mb-3 form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Write your messgae here...</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-25" style="border-radius:5px;margin-left:150px;">Submit</button>
+        </form>
+        <div class="col-sm-1">
+          <hr style="display:none;">
+        </div>
+        <div class=" bg-gradient col-md-2">
+          <h2 class="text-info text-decoration-underline">Contact Us By Social Media</h2><br>
+            <!-- icons contact -->
+            <div class="gmail ">
+              <a title="Click here to send an email to us!" class="btn btn-primary" style="background-color: #3b5998; border: none;" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ramadanchampion@gmail.com" role="button"><i class="fa-solid fa-envelope me-2"></i></i>Gmail :  ramadanchampion@gmail.com</a>
+            </div><br><br>
+            <div class="fb">
+              <a title="Click here to see our Facebook page!" class="btn btn-primary" style="background-color: #4235bb; border: none;" href="https://www.facebook.com/Ramadan-Champion-101956591934283" role="button"><i class="fab fa-facebook-f me-3"></i>Facebook : Ramadan Champion</a>
+            </div><br><br>
+            <div class="map">
+              <a title="Click here to see our Location!"class="btn btn-primary" style="background-color: #55c3ee; border: none;" href="https://goo.gl/maps/pGdqcThjKrv3JoFg8" role="button"><i class="fa-solid fa-location-dot me-3"></i>Location​​​​​​​​ : Phum2 Village</a>  ​
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="cmtUser" placeholder="Write your comment here...">
-            </div>
-            <div class="mb-3 form-check">
-            </div>
-            <button type="submit" class="btn btn-primary p-2 w-50 " style="margin-left:100px; margin-top: -70px;">Submit</button>
-          </form>
-          <div class="col">
-                <h3  class="text-info" style="text-decoration: underline  teal; margin-left: 80px; margin-top: 40px;">Find Us By Google Map</h3>
-              <iframe class="col "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18518.903199967015!2d105.65143227919484!3d12.254370198026884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310c537ba91d860b%3A0x4261854bd1d3018!2z4Z6V4Z-S4Z6f4Z624Z6a4Z6X4Z684Z6Y4Z634Z6B4Z-S4Z6W4Z6U4Z-i!5e0!3m2!1sen!2sus!4v1658313975457!5m2!1sen!2sus" width="360" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="col">
-
-          </div>
+        </div>
       </div>
+    </div><br><br><br><br><br>
+
+    <footer class="container-fluid d-flex justify-content-center text-light p-3">
+            @Organizing Committee of Ramadan Champion Trophy
+    </footer>
 
 </body>
 </html>
